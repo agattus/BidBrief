@@ -1,0 +1,21 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Liberation Sans,48,&H00FFFFFF,&H000000FF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,0,2,60,60,220,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:03.67,Default,,0,0,0,,Little Hanuman saw a golden fruit\Nhanging in the sky.
+Dialogue: 0,0:00:04.02,0:00:07.38,Default,,0,0,0,,He leapt for it—\Nlaughing, climbing the wind.
+Dialogue: 0,0:00:08.28,0:00:10.99,Default,,0,0,0,,Indra's thunder struck him\Nfrom the heavens.
+Dialogue: 0,0:00:11.99,0:00:14.78,Default,,0,0,0,,The gods gathered around\Nthe fallen child.
+Dialogue: 0,0:00:15.18,0:00:18.15,Default,,0,0,0,,They hid his strength\Nbehind a soft forgetting.
+Dialogue: 0,0:00:19.25,0:00:23.98,Default,,0,0,0,,Years later, one true name\Nunlocked what sleep had sealed.
+Dialogue: 0,0:00:24.98,0:00:27.48,Default,,0,0,0,,What felt like weakness\Nwas only a lock.
+Dialogue: 0,0:00:28.38,0:00:30.92,Default,,0,0,0,,And locks exist\Nfor the hour you are ready.

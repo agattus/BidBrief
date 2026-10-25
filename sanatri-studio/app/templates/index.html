@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sanatri Studio</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <p class="series">Legends of Bharat</p>
+    <h1 class="brand">Sanatri Studio</h1>
+    <p class="tag">
+      Paste your scene script. The studio builds a short-film episode with
+      visuals, narration, subtitles — then gives you a phone download.
+    </p>
+
+    <section class="panel">
+      <label for="script">Your script (Scene / Visual / Audio / Voiceover format)</label>
+      <textarea id="script" spellcheck="true"></textarea>
+      <div class="row">
+        <button class="primary" id="btnGenerate" type="button">Generate episode</button>
+        <button class="ghost" id="btnParse" type="button">Preview scenes</button>
+        <button class="ghost" id="btnSample" type="button">Load Jalandhara sample</button>
+      </div>
+
+      <div class="progress-wrap" id="progressWrap">
+        <div class="bar"><span id="bar"></span></div>
+        <p class="status-msg" id="statusMsg">Starting…</p>
+      </div>
+
+      <div class="downloads" id="downloads">
+        <a class="btn primary" id="dlPhone" href="#" download>⬇ Download phone MP4</a>
+        <a class="btn ghost" id="dlFull" href="#" download>Download full MP4</a>
+        <a class="btn ghost" id="dlSrt" href="#" download>Download subtitles</a>
+      </div>
+
+      <div class="scenes" id="scenes"></div>
+      <p class="hint">
+        Uses edge-tts narration + AI scene stills + ffmpeg compose.
+        Add your own BGM/VFX after download if you want richer sound design.
+      </p>
+    </section>
+  </main>
+
+  <script>
+    const SAMPLE = `Video Title: The Demon Born From Shiva’s Third Eye (The Greatest Divine Betrayal)
+Scene 1: The Hook
+[Visual Prompt]: Cinematic, dark fantasy style. Close-up of Lord Shiva’s third eye opening, burning with intense, blinding cosmic fire. The camera pans out to show the fire plunging into a dark, stormy, hyper-realistic ocean.
+[Audio]: Deep, booming cinematic bass drop. Sounds of raging ocean waves and thunder. A ticking clock or slow heartbeat builds tension.
+[Voiceover - Deep, mysterious, gripping tone]:
+What if I told you that Lord Shiva once faced an enemy he could not destroy? An entity so powerful, so invincible, that the combined forces of the cosmos were brought to their knees. But the greatest mystery isn't how strong this demon was... it’s where he came from. To defeat him, the Gods couldn't use weapons. Lord Vishnu had to commit the ultimate sin of betrayal. This is the forgotten legend of Jalandhara—the demon who wore the face of a God.
+Scene 2: The Birth of Pure Rage
+[Visual Prompt]: Indra (King of Gods) standing arrogantly on his elephant. The scene shifts to a terrifying silhouette of Lord Shiva in meditation. A massive blast of fire shoots from his forehead. The fire transforms into a glowing warrior form rising from ocean waves, received by Varuna (God of the Sea).
+[Audio]: Ethereal, eerie choir music. Transitioning to a fast-paced, aggressive tribal drum beat.
+[Voiceover]:
+The story begins not with evil, but with arrogance. When Indra, the King of the Gods, dared to challenge Lord Shiva, Shiva's third eye opened in apocalyptic fury. To save the universe from immediate destruction, the fire was diverted and thrown into the depths of the ocean. But the energy of the destroyer does not simply vanish. From the boiling waters of the sea, a child was born. His name was Jalandhara—literally meaning He who holds the water. Born from Shiva’s pure wrath, he was destined to be the most terrifying force the three worlds had ever seen.
+Scene 3: The Secret of Invincibility
+[Visual Prompt]: Jalandhara as a dark, majestic emperor sitting on a throne of black stone. Beside him sits a beautiful, glowing young woman—Vrinda, surrounded by an aura of pure golden light. She is praying to an idol of Lord Vishnu. Cream saree with gold embroidery.
+[Audio]: Soft, melancholic Indian flute mixed with dark, ambient synth.
+[Voiceover]:
+Jalandhara grew into an unstoppable emperor of the Asuras. But his true power wasn't just his brute strength; it was a closely guarded secret. It was his wife, Vrinda. Vrinda was a woman of unmatched purity and an absolute devotee of Lord Vishnu. Her devotion and loyalty created a mystical, impenetrable shield around her husband. As long as Vrinda remained faithful and her chastity was unbroken, Jalandhara was literally immortal. No weapon forged in the cosmos could leave a single scratch on his skin.
+Scene 4: The Cosmic War
+[Visual Prompt]: Epic battle montage. Jalandhara in dark demonic armor with Shiva-like features destroying the armies of the Gods. Mount Kailash is surrounded. Shiva steps onto the battlefield, holding his Trishul, eyes locked with Jalandhara. Blood red sky.
+[Audio]: High-intensity orchestral battle music. Clashing of metals, lightning strikes.
+[Voiceover]:
+Drunk on power, Jalandhara did the unthinkable. He dethroned Indra, conquered the heavens, and finally, marched on Mount Kailash to challenge his own creator—Lord Shiva. The battle was catastrophic. The universe shook as the Creator of Destruction fought the byproduct of his own anger. But as Shiva's Trishul struck Jalandhara, the Gods watched in pure horror. The weapon bounced off. Because of Vrinda's spiritual shield, even the Supreme Destroyer could not kill him. The cosmos was on the brink of total annihilation.
+Scene 5: The Ultimate Deception
+[Visual Prompt]: A dark, mystical forest. Young Vrinda in cream gold saree looks worried. A figure that looks exactly like Jalandhara steps from the shadows. Pool reflection reveals Lord Vishnu blue skin peacock feather crown.
+[Audio]: Complete silence for two seconds. Then a tragic, haunting string instrument begins to play softly.
+[Voiceover]:
+The Gods were desperate. There was only one way to end the war, and it required a sacrifice of morality. Lord Vishnu, the preserver of the universe, had to make a heartbreaking choice to save existence. While Jalandhara fought Shiva, Vishnu disguised himself as the demon king and appeared before Vrinda. Believing him to be her victorious husband, she embraced him. In that single, fleeting moment, the illusion was complete—and her vow of absolute fidelity was technically broken.
+Scene 6: The Fall and The Curse
+[Visual Prompt]: Young Vrinda grief and rage, cream saree. Jalandhara armor shatters and Shiva's Trishul pierces him. Vrinda points at Vishnu cursing him. No elderly woman.
+[Audio]: A loud, echoing thunderclap. Dramatic, sorrowful vocal wailing.
+[Voiceover]:
+The moment the deception occurred, Jalandhara’s invincible shield shattered. Miles away on the battlefield, Shiva’s trident finally pierced the demon's heart, ending his reign of terror. But the tragedy was just beginning. Realizing she had been tricked by the very God she worshipped, Vrinda was consumed by grief and fury. She cursed Lord Vishnu, declaring that because he acted like a heartless stone, he would be turned into one.
+Scene 7: The Lingering Legacy (Outro)
+[Visual Prompt]: Sacred Tulsi plant growing beside a smooth black Shaligram stone. Smoky mysterious logo atmosphere.
+[Audio]: Calm, spiritual temple bells. The music slowly fades out into an ambient drone.
+[Voiceover]:
+Vishnu accepted her curse with bowed head, transforming his aspect into the black Shaligram stone. And from the ashes of the tragic Vrinda grew a plant that would become sacred to all of India—the Tulsi. To this day, the Shaligram and the Tulsi are worshipped together, forever bound by a story of cosmic war, divine duty, and a betrayal that saved the universe. If you seek more hidden mysteries from the ancient texts, hit subscribe. The legends of Bharath are deeper than you know.
+Production Notes for this script:
+ Pacing: Allow a 1-2 second pause after rhetorical questions in the Hook.
+ Visual Generation: When generating Jalandhara, prompt for Shiva-like features but with dark, demonic armor.`;
+
+    const scriptEl = document.getElementById("script");
+    const scenesEl = document.getElementById("scenes");
+    const progressWrap = document.getElementById("progressWrap");
+    const bar = document.getElementById("bar");
+    const statusMsg = document.getElementById("statusMsg");
+    const downloads = document.getElementById("downloads");
+    const btnGenerate = document.getElementById("btnGenerate");
+
+    document.getElementById("btnSample").onclick = () => {
+      scriptEl.value = SAMPLE;
+    };
+    scriptEl.value = SAMPLE;
+
+    function renderScenes(data) {
+      scenesEl.innerHTML = `<p class="ok"><strong>${data.title}</strong> · ${data.scenes.length} scenes</p>` +
+        data.scenes.map(s => `
+          <article class="scene">
+            <h3>Scene ${s.index}: ${s.title}</h3>
+            <p><strong>Visual:</strong> ${s.visual.slice(0, 160)}${s.visual.length>160?"…":""}</p>
+            <p><strong>Audio:</strong> ${s.audio.slice(0, 120)}${s.audio.length>120?"…":""}</p>
+            <p><strong>VO:</strong> ${s.voiceover.slice(0, 180)}${s.voiceover.length>180?"…":""}</p>
+          </article>`).join("");
+    }
+
+    document.getElementById("btnParse").onclick = async () => {
+      const res = await fetch("/api/parse", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ script: scriptEl.value }),
+      });
+      const data = await res.json();
+      renderScenes(data);
+    };
+
+    async function poll(jobId) {
+      progressWrap.classList.add("on");
+      downloads.classList.remove("on");
+      while (true) {
+        const res = await fetch(`/api/status/${jobId}`);
+        const st = await res.json();
+        bar.style.width = `${st.percent || 0}%`;
+        statusMsg.textContent = st.message || st.state;
+        statusMsg.className = "status-msg " + (st.state === "error" ? "error" : "");
+        if (st.state === "done") {
+          document.getElementById("dlPhone").href = `/download/${jobId}/phone`;
+          document.getElementById("dlFull").href = `/download/${jobId}/full`;
+          document.getElementById("dlSrt").href = `/download/${jobId}/srt`;
+          downloads.classList.add("on");
+          btnGenerate.disabled = false;
+          return;
+        }
+        if (st.state === "error") {
+          btnGenerate.disabled = false;
+          return;
+        }
+        await new Promise(r => setTimeout(r, 1500));
+      }
+    }
+
+    btnGenerate.onclick = async () => {
+      btnGenerate.disabled = true;
+      downloads.classList.remove("on");
+      const res = await fetch("/api/generate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ script: scriptEl.value }),
+      });
+      const data = await res.json();
+      if (!data.job_id) {
+        statusMsg.textContent = "Could not start job";
+        statusMsg.className = "status-msg error";
+        btnGenerate.disabled = false;
+        return;
+      }
+      await poll(data.job_id);
+    };
+  </script>
+</body>
+</html>

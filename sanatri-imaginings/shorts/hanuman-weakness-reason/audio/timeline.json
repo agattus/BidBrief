@@ -1,0 +1,53 @@
+{
+  "total": 31.522,
+  "cues": [
+    [
+      0.0,
+      3.672,
+      "Little Hanuman saw a golden fruit hanging in the sky.",
+      0.35
+    ],
+    [
+      4.022,
+      7.382,
+      "He leapt for it\u2014laughing, climbing the wind.",
+      0.9
+    ],
+    [
+      8.282,
+      10.994,
+      "Indra's thunder struck him from the heavens.",
+      1.0
+    ],
+    [
+      11.994,
+      14.777999999999999,
+      "The gods gathered around the fallen child.",
+      0.4
+    ],
+    [
+      15.177999999999999,
+      18.154,
+      "They hid his strength behind a soft forgetting.",
+      1.1
+    ],
+    [
+      19.254,
+      23.982,
+      "Years later, one true name unlocked what sleep had sealed.",
+      1.0
+    ],
+    [
+      24.982,
+      27.477999999999998,
+      "What felt like weakness was only a lock.",
+      0.9
+    ],
+    [
+      28.377999999999997,
+      30.921999999999997,
+      "And locks exist for the hour you are ready.",
+      0.6
+    ]
+  ]
+}
