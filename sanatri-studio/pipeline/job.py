@@ -15,7 +15,7 @@ from .compose import (
     write_subs,
 )
 from .images import generate_scene_image
-from .script_parser import parse_script
+from .script_parser import parse_script, validate_parsed
 from .tts import generate_scene_vo
 
 
@@ -32,6 +32,7 @@ def run_job(job_dir: Path, script_text: str, progress_cb=None) -> Path:
     try:
         progress(2, "Parsing script…")
         parsed = parse_script(script_text)
+        validate_parsed(parsed)
         (job_dir / "parsed.json").write_text(json.dumps(parsed.to_dict(), indent=2))
 
         images_dir = job_dir / "images"
