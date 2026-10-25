@@ -5,3 +5,9 @@ out/clips/
 out/*-hq.mp4
 out/jalandhara-delivery.mp4
 frames/
+audio/stems/
+audio/sfx/
+audio/beds/
+audio/old_mix.wav
+audio/mix_scene.wav
+out/jalandhara-pre-scene-audio.mp4
