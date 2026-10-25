@@ -1,0 +1,5 @@
+audio/parts/
+audio/*.wav
+out/clip*.mp4
+out/frames/
+fonts/
