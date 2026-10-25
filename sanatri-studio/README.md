@@ -26,20 +26,28 @@ Open `http://localhost:8787` (or the forwarded port).
 2. **Generate episode**
 3. Tap **Download phone MP4**
 
-## Deploy (Vercel)
+## Deploy (Vercel) — second app next to poker-lekha
 
-Vercel hosts the Studio UI + parse API. Full episode generation needs FFmpeg and multi-minute jobs, so point `SANATRI_WORKER_URL` at a persistent Studio host (this machine via Cloudflare tunnel, Railway, Fly, etc.).
+Vercel hosts the Studio UI + parse API. Full episode generation needs FFmpeg and multi-minute jobs, so set `SANATRI_WORKER_URL` to a persistent Studio host (Cloudflare tunnel / Railway / Fly).
+
+### Option A — same GitHub import flow as poker-lekha
+
+1. Open [vercel.com/new](https://vercel.com/new)
+2. Import **agattus/BidBrief**
+3. **Project Name:** `sanatri-studio`
+4. **Root Directory:** `sanatri-studio` (important — monorepo)
+5. **Branch:** `cursor/deploy-sanatri-vercel-b30e` (until merged to `main`)
+6. Framework: leave auto (FastAPI / Python)
+7. Environment Variable:
+   - `SANATRI_WORKER_URL` = your always-on worker URL
+8. Deploy → you get `https://sanatri-studio.vercel.app` (or similar)
+
+### Option B — CLI (needs token)
 
 ```bash
 cd sanatri-studio
-npx vercel --prod --yes \
-  --env SANATRI_WORKER_URL=https://your-worker.example.com
-```
-
-Temporary (no login):
-
-```bash
-npx vercel deploy --temporary --yes \
+npx vercel --prod --yes --name sanatri-studio \
+  --token "$VERCEL_TOKEN" \
   --env SANATRI_WORKER_URL=https://your-worker.example.com
 ```
 
