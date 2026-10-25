@@ -1,0 +1,7 @@
+audio/parts/
+audio/tmp/
+audio/*.wav
+out/clips/
+out/*-hq.mp4
+out/jalandhara-delivery.mp4
+frames/
