@@ -26,6 +26,23 @@ Open `http://localhost:8787` (or the forwarded port).
 2. **Generate episode**
 3. Tap **Download phone MP4**
 
+## Deploy (Vercel)
+
+Vercel hosts the Studio UI + parse API. Full episode generation needs FFmpeg and multi-minute jobs, so point `SANATRI_WORKER_URL` at a persistent Studio host (this machine via Cloudflare tunnel, Railway, Fly, etc.).
+
+```bash
+cd sanatri-studio
+npx vercel --prod --yes \
+  --env SANATRI_WORKER_URL=https://your-worker.example.com
+```
+
+Temporary (no login):
+
+```bash
+npx vercel deploy --temporary --yes \
+  --env SANATRI_WORKER_URL=https://your-worker.example.com
+```
+
 ## Notes
 
 - Image provider: Pollinations (no key). Swap later for your preferred API.
