@@ -8,14 +8,12 @@
 
 ## Description draft
 
-They called it weakness.
-It was protection.
+Little Hanuman saw a golden fruit in the sky.
+He leapt for it—until thunder answered.
+The gods hid his strength behind forgetting…
+until one true name unlocked what sleep had sealed.
 
-As a child, Hanuman flew toward the sun.
-The gods sealed his strength behind forgetting—
-until the world needed him to remember.
-
-A short retelling from Legends of Bharat.
+A story retelling from Legends of Bharat.
 
 #Hanuman #LegendsOfBharat #SanatriImaginings #HinduMythology #Shorts
 

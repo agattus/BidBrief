@@ -5,7 +5,8 @@ Sanatri Imaginings · **Legends of Bharat** · English story Short
 | Field | Value |
 | --- | --- |
 | File | `out/hanuman-weakness-reason.mp4` |
-| Duration | ~28s |
+| Duration | ~32s |
+| Tone | Story retelling (not documentary narration) |
 | Aspect | 1080×1920 (9:16) |
 | Intro | None (Shorts start on first shot) |
 | Subtitles | Burned-in + sidecar `.srt` / `.ass` |

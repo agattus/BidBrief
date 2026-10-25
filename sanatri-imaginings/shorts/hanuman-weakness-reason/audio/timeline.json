@@ -1,47 +1,53 @@
 {
-  "total": 28.052,
+  "total": 31.522,
   "cues": [
     [
       0.0,
-      5.424,
-      "As a child, Hanuman flew toward the sun, mistaking it for fruit.",
+      3.672,
+      "Little Hanuman saw a golden fruit hanging in the sky.",
+      0.35
+    ],
+    [
+      4.022,
+      7.382,
+      "He leapt for it\u2014laughing, climbing the wind.",
       0.9
     ],
     [
-      6.324000000000001,
-      8.196000000000002,
-      "Indra struck him down.",
+      8.282,
+      10.994,
+      "Indra's thunder struck him from the heavens.",
+      1.0
+    ],
+    [
+      11.994,
+      14.777999999999999,
+      "The gods gathered around the fallen child.",
+      0.4
+    ],
+    [
+      15.177999999999999,
+      18.154,
+      "They hid his strength behind a soft forgetting.",
       1.1
     ],
     [
-      9.296000000000001,
-      11.744000000000002,
-      "The gods feared what he might become.",
+      19.254,
+      23.982,
+      "Years later, one true name unlocked what sleep had sealed.",
       1.0
     ],
     [
-      12.744000000000002,
-      16.224,
-      "So they sealed his strength behind a curse of forgetting.",
-      0.8
+      24.982,
+      27.477999999999998,
+      "What felt like weakness was only a lock.",
+      0.9
     ],
     [
-      17.024,
-      19.52,
-      "Until someone reminded him who he was.",
-      1.2
-    ],
-    [
-      20.72,
-      23.0,
-      "Your weakness may not be a flaw.",
-      1.0
-    ],
-    [
-      24.0,
-      27.552,
-      "It may be protection\u2014waiting for the hour you are ready.",
-      0.5
+      28.377999999999997,
+      30.921999999999997,
+      "And locks exist for the hour you are ready.",
+      0.6
     ]
   ]
 }
