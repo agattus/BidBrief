@@ -1,0 +1,47 @@
+{
+  "total": 28.052,
+  "cues": [
+    [
+      0.0,
+      5.424,
+      "As a child, Hanuman flew toward the sun, mistaking it for fruit.",
+      0.9
+    ],
+    [
+      6.324000000000001,
+      8.196000000000002,
+      "Indra struck him down.",
+      1.1
+    ],
+    [
+      9.296000000000001,
+      11.744000000000002,
+      "The gods feared what he might become.",
+      1.0
+    ],
+    [
+      12.744000000000002,
+      16.224,
+      "So they sealed his strength behind a curse of forgetting.",
+      0.8
+    ],
+    [
+      17.024,
+      19.52,
+      "Until someone reminded him who he was.",
+      1.2
+    ],
+    [
+      20.72,
+      23.0,
+      "Your weakness may not be a flaw.",
+      1.0
+    ],
+    [
+      24.0,
+      27.552,
+      "It may be protection\u2014waiting for the hour you are ready.",
+      0.5
+    ]
+  ]
+}

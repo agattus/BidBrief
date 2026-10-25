@@ -1,0 +1,20 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Liberation Sans,48,&H00FFFFFF,&H000000FF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,0,2,60,60,220,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:05.42,Default,,0,0,0,,As a child, Hanuman flew toward the sun,\Nmistaking it for fruit.
+Dialogue: 0,0:00:06.32,0:00:08.20,Default,,0,0,0,,Indra struck him down.
+Dialogue: 0,0:00:09.30,0:00:11.74,Default,,0,0,0,,The gods feared what he might become.
+Dialogue: 0,0:00:12.74,0:00:16.22,Default,,0,0,0,,So they sealed his strength\Nbehind a curse of forgetting.
+Dialogue: 0,0:00:17.02,0:00:19.52,Default,,0,0,0,,Until someone reminded him\Nwho he was.
+Dialogue: 0,0:00:20.72,0:00:23.00,Default,,0,0,0,,Your weakness may not be a flaw.
+Dialogue: 0,0:00:24.00,0:00:27.55,Default,,0,0,0,,It may be protection—\Nwaiting for the hour you are ready.
