@@ -1,0 +1,6 @@
+audio/parts/
+audio/tmp/
+audio/*.wav
+out/clips/
+out/*-hq.mp4
+frames/
