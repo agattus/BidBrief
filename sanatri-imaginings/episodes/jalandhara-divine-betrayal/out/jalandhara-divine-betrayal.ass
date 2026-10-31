@@ -11,48 +11,47 @@ Style: Default,Liberation Sans,40,&H00FFFFFF,&H000000FF,&H00000000,&H80000000,-1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:08.00,0:00:13.09,Default,,0,0,0,,What if I told you that Lord Shiva once\Nfaced an enemy he could not destroy?
-Dialogue: 0,0:00:14.89,0:00:22.64,Default,,0,0,0,,An entity so powerful, so invincible, that the combined\Nforces of the cosmos were brought to their knees.
-Dialogue: 0,0:00:23.09,0:00:26.95,Default,,0,0,0,,But the greatest mystery isn't how strong this demon was.
-Dialogue: 0,0:00:28.15,0:00:30.03,Default,,0,0,0,,It's where he came from.
-Dialogue: 0,0:00:31.63,0:00:34.82,Default,,0,0,0,,To defeat him, the Gods couldn't use weapons.
-Dialogue: 0,0:00:35.27,0:00:39.37,Default,,0,0,0,,Lord Vishnu had to commit the ultimate sin of betrayal.
-Dialogue: 0,0:00:40.52,0:00:46.09,Default,,0,0,0,,This is the forgotten legend of Jalandhara—the\Ndemon who wore the face of a God.
-Dialogue: 0,0:00:47.24,0:00:51.10,Default,,0,0,0,,The story begins not with evil, but with arrogance.
-Dialogue: 0,0:00:51.55,0:01:00.00,Default,,0,0,0,,When Indra, the King of the Gods, dared to challenge Lord\NShiva, Shiva's third eye opened in apocalyptic fury.
-Dialogue: 0,0:01:00.45,0:01:07.96,Default,,0,0,0,,To save the universe from immediate destruction, the fire\Nwas diverted and thrown into the depths of the ocean.
-Dialogue: 0,0:01:08.41,0:01:12.13,Default,,0,0,0,,But the energy of the destroyer does not simply vanish.
-Dialogue: 0,0:01:12.58,0:01:16.35,Default,,0,0,0,,From the boiling waters of the sea, a child was born.
-Dialogue: 0,0:01:16.80,0:01:21.39,Default,,0,0,0,,His name was Jalandhara—literally\Nmeaning He who holds the water.
-Dialogue: 0,0:01:22.54,0:01:30.02,Default,,0,0,0,,Born from Shiva’s pure wrath, he was destined to be the\Nmost terrifying force the three worlds had ever seen.
-Dialogue: 0,0:01:30.47,0:01:35.30,Default,,0,0,0,,Jalandhara grew into an unstoppable\Nemperor of the Asuras.
-Dialogue: 0,0:01:36.45,0:01:42.14,Default,,0,0,0,,But his true power wasn't just his brute strength\Nit was a closely guarded secret.
-Dialogue: 0,0:01:42.59,0:01:44.65,Default,,0,0,0,,It was his wife, Vrinda.
-Dialogue: 0,0:01:45.10,0:01:51.24,Default,,0,0,0,,Vrinda was a woman of unmatched purity and\Nan absolute devotee of Lord Vishnu.
-Dialogue: 0,0:01:51.69,0:01:58.13,Default,,0,0,0,,Her devotion and loyalty created a mystical\Nimpenetrable shield around her husband.
-Dialogue: 0,0:01:58.58,0:02:05.90,Default,,0,0,0,,As long as Vrinda remained faithful and her chastity\Nwas unbroken, Jalandhara was literally immortal.
-Dialogue: 0,0:02:07.05,0:02:11.89,Default,,0,0,0,,No weapon forged in the cosmos could\Nleave a single scratch on his skin.
-Dialogue: 0,0:02:12.34,0:02:16.02,Default,,0,0,0,,Drunk on power, Jalandhara did the unthinkable.
-Dialogue: 0,0:02:17.17,0:02:25.97,Default,,0,0,0,,He dethroned Indra, conquered the heavens, and finally, marched\Non Mount Kailash to challenge his own creator—Lord Shiva.
-Dialogue: 0,0:02:26.42,0:02:28.42,Default,,0,0,0,,The battle was catastrophic.
-Dialogue: 0,0:02:28.87,0:02:34.60,Default,,0,0,0,,The universe shook as the Creator of Destruction\Nfought the byproduct of his own anger.
-Dialogue: 0,0:02:35.05,0:02:40.14,Default,,0,0,0,,But as Shiva's Trishul struck Jalandhara\Nthe Gods watched in pure horror.
-Dialogue: 0,0:02:41.29,0:02:43.16,Default,,0,0,0,,The weapon bounced off.
-Dialogue: 0,0:02:44.31,0:02:49.98,Default,,0,0,0,,Because of Vrinda's spiritual shield, even\Nthe Supreme Destroyer could not kill him.
-Dialogue: 0,0:02:50.43,0:02:54.03,Default,,0,0,0,,The cosmos was on the brink of total annihilation.
-Dialogue: 0,0:02:54.48,0:02:56.35,Default,,0,0,0,,The Gods were desperate.
-Dialogue: 0,0:02:56.80,0:03:02.25,Default,,0,0,0,,There was only one way to end the war, and\Nit required a sacrifice of morality.
-Dialogue: 0,0:03:02.70,0:03:09.61,Default,,0,0,0,,Lord Vishnu, the preserver of the universe, had to\Nmake a heartbreaking choice to save existence.
-Dialogue: 0,0:03:10.06,0:03:17.07,Default,,0,0,0,,While Jalandhara fought Shiva, Vishnu disguised himself\Nas the demon king and appeared before Vrinda.
-Dialogue: 0,0:03:18.22,0:03:22.34,Default,,0,0,0,,Believing him to be her victorious\Nhusband, she embraced him.
-Dialogue: 0,0:03:22.79,0:03:31.15,Default,,0,0,0,,In that single, fleeting moment, the illusion was complete—and\Nher vow of absolute fidelity was technically broken.
-Dialogue: 0,0:03:32.30,0:03:37.31,Default,,0,0,0,,The moment the deception occurred, Jalandhara’s\Ninvincible shield shattered.
-Dialogue: 0,0:03:38.46,0:03:45.83,Default,,0,0,0,,Miles away on the battlefield, Shiva’s trident finally\Npierced the demon's heart, ending his reign of terror.
-Dialogue: 0,0:03:46.28,0:03:48.51,Default,,0,0,0,,But the tragedy was just beginning.
-Dialogue: 0,0:03:48.96,0:03:56.23,Default,,0,0,0,,Realizing she had been tricked by the very God she\Nworshipped, Vrinda was consumed by grief and fury.
-Dialogue: 0,0:03:56.68,0:04:04.32,Default,,0,0,0,,She cursed Lord Vishnu, declaring that because he acted\Nlike a heartless stone, he would be turned into one.
-Dialogue: 0,0:04:05.47,0:04:12.38,Default,,0,0,0,,Vishnu accepted her curse with bowed head, transforming\Nhis aspect into the black Shaligram stone.
-Dialogue: 0,0:04:12.83,0:04:20.03,Default,,0,0,0,,And from the ashes of the tragic Vrinda grew a plant\Nthat would become sacred to all of India—the Tulsi.
-Dialogue: 0,0:04:21.18,0:04:32.79,Default,,0,0,0,,To this day, the Shaligram and the Tulsi are worshipped together, forever bound\Nby a story of cosmic war, divine duty, and a betrayal that saved the universe.
-Dialogue: 0,0:04:33.94,0:04:38.60,Default,,0,0,0,,If you seek more hidden mysteries from\Nthe ancient texts, hit subscribe.
-Dialogue: 0,0:04:39.05,0:04:41.95,Default,,0,0,0,,The legends of Bharath are deeper than you know.
+Dialogue: 0,0:00:08.00,0:00:12.99,Default,,0,0,0,,What if I told you that Lord Shiva once\Nfaced an enemy he could not destroy?
+Dialogue: 0,0:00:14.79,0:00:22.40,Default,,0,0,0,,An entity so powerful, so invincible, that the combined\Nforces of the cosmos were brought to their knees.
+Dialogue: 0,0:00:22.85,0:00:26.64,Default,,0,0,0,,But the greatest mystery isn't how strong this demon was...
+Dialogue: 0,0:00:27.09,0:00:28.96,Default,,0,0,0,,it’s where he came from.
+Dialogue: 0,0:00:29.41,0:00:32.53,Default,,0,0,0,,To defeat him, the Gods couldn't use weapons.
+Dialogue: 0,0:00:32.98,0:00:37.02,Default,,0,0,0,,Lord Vishnu had to commit the ultimate sin of betrayal.
+Dialogue: 0,0:00:38.02,0:00:43.46,Default,,0,0,0,,This is the forgotten legend of Jalandhara—the\Ndemon who wore the face of a God.
+Dialogue: 0,0:00:44.66,0:00:48.46,Default,,0,0,0,,The story begins not with evil, but with arrogance.
+Dialogue: 0,0:00:48.91,0:00:57.19,Default,,0,0,0,,When Indra, the King of the Gods, dared to challenge Lord\NShiva, Shiva's third eye opened in apocalyptic fury.
+Dialogue: 0,0:00:57.64,0:01:04.98,Default,,0,0,0,,To save the universe from immediate destruction, the fire\Nwas diverted and thrown into the depths of the ocean.
+Dialogue: 0,0:01:05.43,0:01:09.08,Default,,0,0,0,,But the energy of the destroyer does not simply vanish.
+Dialogue: 0,0:01:09.53,0:01:13.22,Default,,0,0,0,,From the boiling waters of the sea, a child was born.
+Dialogue: 0,0:01:13.67,0:01:25.36,Default,,0,0,0,,His name was Jalandhara—literally meaning "He who holds the water." Born from Shiva’s pure\Nwrath, he was destined to be the most terrifying force the three worlds had ever seen.
+Dialogue: 0,0:01:26.56,0:01:31.29,Default,,0,0,0,,Jalandhara grew into an unstoppable emperor of the Asuras.
+Dialogue: 0,0:01:32.29,0:01:37.86,Default,,0,0,0,,But his true power wasn't just his brute strength\Nit was a closely guarded secret.
+Dialogue: 0,0:01:38.31,0:01:40.32,Default,,0,0,0,,It was his wife, Vrinda.
+Dialogue: 0,0:01:40.77,0:01:46.80,Default,,0,0,0,,Vrinda was a woman of unmatched purity and\Nan absolute devotee of Lord Vishnu.
+Dialogue: 0,0:01:47.25,0:01:53.54,Default,,0,0,0,,Her devotion and loyalty created a mystical\Nimpenetrable shield around her husband.
+Dialogue: 0,0:01:53.99,0:02:01.16,Default,,0,0,0,,As long as Vrinda remained faithful and her chastity\Nwas unbroken, Jalandhara was literally immortal.
+Dialogue: 0,0:02:02.16,0:02:06.91,Default,,0,0,0,,No weapon forged in the cosmos could\Nleave a single scratch on his skin.
+Dialogue: 0,0:02:08.11,0:02:11.69,Default,,0,0,0,,Drunk on power, Jalandhara did the unthinkable.
+Dialogue: 0,0:02:12.69,0:02:21.31,Default,,0,0,0,,He dethroned Indra, conquered the heavens, and finally, marched\Non Mount Kailash to challenge his own creator—Lord Shiva.
+Dialogue: 0,0:02:21.76,0:02:23.70,Default,,0,0,0,,The battle was catastrophic.
+Dialogue: 0,0:02:24.15,0:02:29.77,Default,,0,0,0,,The universe shook as the Creator of Destruction\Nfought the byproduct of his own anger.
+Dialogue: 0,0:02:30.22,0:02:35.21,Default,,0,0,0,,But as Shiva's Trishul struck Jalandhara\Nthe Gods watched in pure horror.
+Dialogue: 0,0:02:36.21,0:02:38.08,Default,,0,0,0,,The weapon bounced off.
+Dialogue: 0,0:02:38.53,0:02:44.07,Default,,0,0,0,,Because of Vrinda's spiritual shield, even\Nthe Supreme Destroyer could not kill him.
+Dialogue: 0,0:02:44.52,0:02:48.05,Default,,0,0,0,,The cosmos was on the brink of total annihilation.
+Dialogue: 0,0:02:49.25,0:02:50.93,Default,,0,0,0,,The Gods were desperate.
+Dialogue: 0,0:02:51.38,0:02:56.71,Default,,0,0,0,,There was only one way to end the war, and\Nit required a sacrifice of morality.
+Dialogue: 0,0:02:57.16,0:03:03.93,Default,,0,0,0,,Lord Vishnu, the preserver of the universe, had to\Nmake a heartbreaking choice to save existence.
+Dialogue: 0,0:03:04.38,0:03:11.24,Default,,0,0,0,,While Jalandhara fought Shiva, Vishnu disguised himself\Nas the demon king and appeared before Vrinda.
+Dialogue: 0,0:03:12.24,0:03:16.30,Default,,0,0,0,,Believing him to be her victorious\Nhusband, she embraced him.
+Dialogue: 0,0:03:16.75,0:03:24.93,Default,,0,0,0,,In that single, fleeting moment, the illusion was complete—and\Nher vow of absolute fidelity was technically broken.
+Dialogue: 0,0:03:26.13,0:03:31.05,Default,,0,0,0,,The moment the deception occurred, Jalandhara’s\Ninvincible shield shattered.
+Dialogue: 0,0:03:32.05,0:03:39.25,Default,,0,0,0,,Miles away on the battlefield, Shiva’s trident finally\Npierced the demon's heart, ending his reign of terror.
+Dialogue: 0,0:03:39.70,0:03:41.89,Default,,0,0,0,,But the tragedy was just beginning.
+Dialogue: 0,0:03:42.34,0:03:49.46,Default,,0,0,0,,Realizing she had been tricked by the very God she\Nworshipped, Vrinda was consumed by grief and fury.
+Dialogue: 0,0:03:49.91,0:03:57.38,Default,,0,0,0,,She cursed Lord Vishnu, declaring that because he acted\Nlike a heartless stone, he would be turned into one.
+Dialogue: 0,0:03:58.58,0:04:05.35,Default,,0,0,0,,Vishnu accepted her curse with bowed head, transforming\Nhis aspect into the black Shaligram stone.
+Dialogue: 0,0:04:06.35,0:04:13.40,Default,,0,0,0,,And from the ashes of the tragic Vrinda grew a plant\Nthat would become sacred to all of India—the Tulsi.
+Dialogue: 0,0:04:14.40,0:04:25.78,Default,,0,0,0,,To this day, the Shaligram and the Tulsi are worshipped together, forever bound\Nby a story of cosmic war, divine duty, and a betrayal that saved the universe.
+Dialogue: 0,0:04:26.78,0:04:31.34,Default,,0,0,0,,If you seek more hidden mysteries from\Nthe ancient texts, hit subscribe.
+Dialogue: 0,0:04:31.79,0:04:34.62,Default,,0,0,0,,The legends of Bharath are deeper than you know.

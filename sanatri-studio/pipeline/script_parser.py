@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 import re
-from dataclasses import dataclass, asdict
+from dataclasses import asdict, dataclass
 
 
 @dataclass
@@ -28,25 +28,22 @@ class ParsedScript:
         }
 
 
-_SCENE_RE = re.compile(
-    r"Scene\s+(\d+)\s*:\s*(.+?)(?=\n\[|\nScene\s+\d+\s*:|\nProduction Notes|\Z)",
-    re.IGNORECASE | re.DOTALL,
-)
-_TITLE_RE = re.compile(
-    r"(?:Video\s+Title|Title)\s*:\s*(.+)", re.IGNORECASE
-)
+# Scene body runs until next Scene / Production Notes / EOF — do NOT stop at "[" tags.
+_SCENE_HEADER_RE = re.compile(r"^Scene\s+(\d+)\s*:\s*(.*)$", re.IGNORECASE | re.MULTILINE)
+_TITLE_RE = re.compile(r"(?:Video\s+Title|Title)\s*:\s*(.+)", re.IGNORECASE)
 _VISUAL_RE = re.compile(
-    r"\[Visual Prompt\]\s*:\s*(.+?)(?=\n\[|\Z)", re.IGNORECASE | re.DOTALL
+    r"\[Visual Prompt\]\s*:\s*(.+?)(?=\n\s*\[|\Z)", re.IGNORECASE | re.DOTALL
 )
 _AUDIO_RE = re.compile(
-    r"\[Audio\]\s*:\s*(.+?)(?=\n\[|\Z)", re.IGNORECASE | re.DOTALL
+    r"\[Audio\]\s*:\s*(.+?)(?=\n\s*\[|\Z)", re.IGNORECASE | re.DOTALL
 )
 _VO_RE = re.compile(
-    r"\[Voiceover[^\]]*\]\s*:\s*(.+?)(?=\nScene\s+\d+\s*:|\nProduction Notes|\Z)",
+    r"\[Voiceover[^\]]*\]\s*:\s*(.+?)(?=\Z)",
     re.IGNORECASE | re.DOTALL,
 )
-_NOTES_RE = re.compile(
-    r"Production Notes.*?:\s*(.+)\Z", re.IGNORECASE | re.DOTALL
+_NOTES_RE = re.compile(r"Production Notes.*?:\s*(.+)\Z", re.IGNORECASE | re.DOTALL)
+_NEXT_SCENE_OR_NOTES = re.compile(
+    r"\n(?=Scene\s+\d+\s*:|Production Notes)", re.IGNORECASE
 )
 
 
@@ -60,6 +57,28 @@ def split_voiceover_sentences(vo: str) -> list[str]:
     return [p.strip() for p in parts if p.strip()]
 
 
+def _split_scene_blocks(text: str) -> list[tuple[int, str, str]]:
+    """Return list of (index, title, body_after_title)."""
+    headers = list(_SCENE_HEADER_RE.finditer(text))
+    if not headers:
+        return []
+
+    blocks: list[tuple[int, str, str]] = []
+    for i, m in enumerate(headers):
+        idx = int(m.group(1))
+        title = (m.group(2) or "").strip()
+        start = m.end()
+        end = headers[i + 1].start() if i + 1 < len(headers) else len(text)
+        body = text[start:end]
+        body = _NEXT_SCENE_OR_NOTES.split(body, maxsplit=1)[0]
+        if not title:
+            lines = body.lstrip("\n").split("\n", 1)
+            title = lines[0].strip()
+            body = lines[1] if len(lines) > 1 else ""
+        blocks.append((idx, title, body.strip()))
+    return blocks
+
+
 def parse_script(raw: str) -> ParsedScript:
     text = raw.replace("\r\n", "\n").strip()
     title_m = _TITLE_RE.search(text)
@@ -69,26 +88,22 @@ def parse_script(raw: str) -> ParsedScript:
     notes = notes_m.group(1).strip() if notes_m else ""
 
     scenes: list[Scene] = []
-    for m in _SCENE_RE.finditer(text):
-        idx = int(m.group(1))
-        body = m.group(2).strip()
-        # first line is title; rest may include tags
-        lines = body.split("\n", 1)
-        scene_title = lines[0].strip()
-        rest = lines[1] if len(lines) > 1 else body
-
+    for idx, scene_title, rest in _split_scene_blocks(text):
         visual_m = _VISUAL_RE.search(rest)
         audio_m = _AUDIO_RE.search(rest)
         vo_m = _VO_RE.search(rest)
-        # Fallback: if VO tag missing, take text after last tag block
+
         voiceover = ""
         if vo_m:
             voiceover = vo_m.group(1).strip()
         else:
-            # try unlabeled paragraphs after audio
             chunks = re.split(r"\[Audio\]\s*:.+", rest, flags=re.IGNORECASE | re.DOTALL)
             if len(chunks) > 1:
                 voiceover = chunks[-1].strip()
+
+        voiceover = re.split(
+            r"\nProduction Notes", voiceover, maxsplit=1, flags=re.IGNORECASE
+        )[0].strip()
 
         scenes.append(
             Scene(
@@ -101,7 +116,6 @@ def parse_script(raw: str) -> ParsedScript:
         )
 
     if not scenes:
-        # Treat whole body as one scene VO
         scenes.append(
             Scene(
                 index=1,
@@ -113,3 +127,14 @@ def parse_script(raw: str) -> ParsedScript:
         )
 
     return ParsedScript(title=title, scenes=scenes, production_notes=notes)
+
+
+def validate_parsed(parsed: ParsedScript) -> None:
+    """Raise ValueError if any scene is missing voiceover (incomplete parse)."""
+    empty = [s.index for s in parsed.scenes if not (s.voiceover or "").strip()]
+    if empty:
+        raise ValueError(
+            "Script parse incomplete: empty voiceover for scene(s) "
+            + ", ".join(str(i) for i in empty)
+            + ". Check that each Scene includes a [Voiceover] block."
+        )

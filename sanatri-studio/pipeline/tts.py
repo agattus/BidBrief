@@ -37,9 +37,14 @@ def generate_scene_vo(
 ) -> tuple[list[Path], list[float], list[str]]:
     """Return (mp3_parts, pauses_after_each, sentences)."""
     out_dir.mkdir(parents=True, exist_ok=True)
+    if not (voiceover or "").strip():
+        raise ValueError(
+            "Empty voiceover — cannot synthesize narration. "
+            "Fix the script parse or provide [Voiceover] text."
+        )
     sentences = [s for s in split_voiceover_sentences(voiceover) if s and s.strip()]
     if not sentences:
-        sentences = [voiceover.strip()] if voiceover.strip() else ["The legend continues."]
+        sentences = [voiceover.strip()]
 
     paths: list[Path] = []
     pauses: list[float] = []
